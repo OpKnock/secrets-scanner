@@ -1,20 +1,6 @@
-```regex
-██████╗  ██████╗ ██████╗ ████████╗██╗ █████╗
-██╔══██╗██╔═══██╗██╔══██╗╚══██╔══╝██║██╔══██╗
-██████╔╝██║   ██║██████╔╝   ██║   ██║███████║
-██╔═══╝ ██║   ██║██╔══██╗   ██║   ██║██╔══██║
-██║     ╚██████╔╝██║  ██║   ██║   ██║██║  ██║
-╚═╝      ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝╚═╝  ╚═╝
-```
+# Secrets Scanner
 
-[![Cybersecurity Projects](https://img.shields.io/badge/Cybersecurity--Projects-Project%20%2316%20intermediate-red?style=flat&logo=github)](https://github.com/CarterPerez-dev/Cybersecurity-Projects/tree/main/PROJECTS/intermediate/secrets-scanner)
-[![Go](https://img.shields.io/badge/Go-1.24+-00ADD8?style=flat&logo=go&logoColor=white)](https://go.dev)
-[![License: AGPLv3](https://img.shields.io/badge/License-AGPL_v3-purple.svg)](https://www.gnu.org/licenses/agpl-3.0)
-[![HIBP](https://img.shields.io/badge/HIBP-integrated-2A6DB2?style=flat)](https://haveibeenpwned.com/API/v3)
-
-> Secrets scanner for codebases and git repositories, written in Go.
-
-*This is a quick overview. Security theory, architecture, and full walkthroughs are in the [learn modules](#learn).*
+Secrets scanner for codebases and git repositories, written in Go.
 
 ## What It Does
 
@@ -30,13 +16,13 @@
 ## Install
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/CarterPerez-dev/portia/main/install.sh | bash
+go install github.com/CarterPerez-dev/portia/cmd/portia@latest
 ```
 
-Or with Go:
+Or with just:
 
 ```bash
-go install github.com/CarterPerez-dev/portia/cmd/portia@latest
+curl -sSf https://just.systems/install.sh | bash -s -- --to ~/.local/bin
 ```
 
 ## Quick Start
@@ -44,11 +30,6 @@ go install github.com/CarterPerez-dev/portia/cmd/portia@latest
 ```bash
 portia scan .
 ```
-
-> [!TIP]
-> This project uses [`just`](https://github.com/casey/just) as a command runner. Type `just` to see all available commands.
->
-> Install: `curl -sSf https://just.systems/install.sh | bash -s -- --to ~/.local/bin`
 
 ## Commands
 
